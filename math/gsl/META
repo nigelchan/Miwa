@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: fe80daa31a859fda33334c79cd1175f4)
+version = "1.11.0"
+description = "GSL - Bindings to the GNU Scientific Library"
+requires = "bigarray"
+archive(byte) = "gsl.cma"
+archive(byte, plugin) = "gsl.cma"
+archive(native) = "gsl.cmxa"
+archive(native, plugin) = "gsl.cmxs"
+exists_if = "gsl.cma"
+# OASIS_STOP
+
