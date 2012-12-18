@@ -137,6 +137,7 @@ class optimizationConstraint =
     object (self)
 
 
+        (* FIXME *)
         method test (x: float array) =
             let flag = ref true in
             if x.(0) <= 0. then flag := false;
@@ -159,7 +160,7 @@ class costFunction (model:hestonProcess model) (instruments: hestonCalibrateInst
             let n = Array.length _instruments in
             let j = Matrix.create n p in
 
-            let dx = 1e-4 in (* FIXME *)
+            let dx = 1e-6 in (* FIXME *)
 
             let f = ref (self#individualCosts params) in
 

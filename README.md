@@ -3,7 +3,8 @@ Miwa
 
 Functional Programming in Finance
 
-Sample run results:
+Demonstration:
+First calibrate a heston model to market data, then use it to price a European call option.
 
     [DATA] S: 4468.17
     [DATA] Implied Volatility Surface:
